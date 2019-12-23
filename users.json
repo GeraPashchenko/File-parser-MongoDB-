@@ -1,0 +1,38 @@
+[
+    {
+        "UserName": "TheBlade",
+        "FirstName": "Boris",
+        "LastName": "Yurinov",
+        "Age": "47"
+    },
+    {
+        "UserName": "Lion",
+        "FirstName": "Makar",
+        "LastName": "Petrin",
+        "Age": "20"
+    },
+    {
+        "UserName": "FireBelt",
+        "FirstName": "Bob",
+        "LastName": "Nicklson",
+        "Age": "31"
+    },
+    {
+        "UserName": "Dimasik",
+        "FirstName": "Dmitry",
+        "LastName": "Lyfar",
+        "Age": "19"
+    },
+    {
+        "UserName": "Glebka228",
+        "FirstName": "Gleb",
+        "LastName": "Lind",
+        "Age": "21"
+    },
+    {
+        "UserName": "Marinad",
+        "FirstName": "Marina",
+        "LastName": "Dylitl",
+        "Age": "12"
+    }
+]
