@@ -32,7 +32,7 @@ MongoClient.connect(url, { useUnifiedTopology: true }, function (err, client) {
     //if we need our data to store in the file
    //fs.writeFileSync("users.json",JSON.stringify(jsonData,null,4)); 
 
-    fs.writeFile("/data/usersFromDB.csv", jsonToCsv.convertArrayOfObjects(jsonData, ["UserName", "FirstName", "LastName", "Age"]), function (err) {//data from MongoDB to csv
+    fs.writeFile("./data/usersFromDB.csv", jsonToCsv.convertArrayOfObjects(jsonData, ["UserName", "FirstName", "LastName", "Age"]), function (err) {//data from MongoDB to csv
       if (err) throw err;
     });
     client.close();
@@ -45,8 +45,8 @@ app.get("/", function (req, res) {
 });
 
 app.get("/download", function (req, res) {
-  fs.readFile("/data/usersFromDB.csv", function (err, data) {
-    res.set({ "Content-Disposition": "attachment; filename=\"/data/usersFromDB.csv\"" });
+  fs.readFile("./data/usersFromDB.csv", function (err, data) {
+    res.set({ "Content-Disposition": "attachment; filename=\"usersFromDB.csv\"" });
     res.send(data);
   });
 });
